@@ -33,7 +33,8 @@ const calcularDepreciacionNIIF = (precioInicial, precioFinal, vidaUtil, numeroPe
     }
     else{
         let operacion = ((precioInicial-precioFinal)/vidaUtil)*(numeroPeriodoAconsultar);
-        return operacion;
+        let precio_depreciado = precioInicial-operacion;
+        return precio_depreciado;
     }
 }
 
